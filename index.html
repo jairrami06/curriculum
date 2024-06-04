@@ -1,107 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Currículum Vitae</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Desarrollador Web, programación, desarrollo web, experiencia profesional, aplicaciones, desarrollo de software, sistemas">
+    <meta name="description" content="Mi portafolio con toda la información sobre mí, experiencia, proyectos y contacto.">
+    <meta name="author" content="Jair Ramirez">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="public/style.css">
 </head>
-
 <body>
-    <header>
-        <h1>Currículum Vitae</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Educación</a></li>
-            <li><a href="#">Experiencia</a></li>
-            <li><a href="#">Habilidades</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <section id="informacion-personal">
-        <h2 class="subtitulo">Información personal</h2>
-        <p>
-            Nombre: <span>Jair Ramirez</span>
-        </p>
-        <img src="https://placehold.co/600x400" alt="mifoto" title="Jair Ramirez" />
-        <p>
-            Correo electrónico: <span>jairrami@espol.edu.ec</span>
-        </p>
-    </section>
-    <section id="educacion">
-        
-        <h2 class="subtitulo">Educación</h2>
-        <p>
-            Grado: <span>Licenciatura en Informática</span>
-        </p>
-        <p>
-            Institución: <span>Universidad Nacional Autónoma de México</span>
-        </p>
-        <p>
-            Fechas: <span>2020 - 2023</span>
-        </p>
-    </section>
-    <section id="experiencia">
-        <h2 class="subtitulo">Experiencia</p>
-            <div id="experiencia">
-            <p>
-                Cargo: <span>Desarrollador de software</span>
-            </p>
-            <p>
-                Empresa: <span>Google</span>
-            </p>
-            <p>
-                Fechas: <span>2023 - Presente</span>
-            </p>
-            <p>
-                Descripción:
-            <ul>
-                <li>Desarrollo de aplicaciones web</li>
-                <li>Mantenimiento de sistemas</li>
-                <li>Trabajo en equipo</li>
-            </ul>
-            </p>
+
+    <div class="contenedor-header">
+        <header>
+                <a class="btn btn-header" href="#contacto" onclick=seleccionar()>Contáctame!</a>
+            <nav id="navegacion">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#techstack">Tech Stack</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/fotoJair.jpeg" alt="foto perfil" class="foto-perfil">
+            </div>
+            <h1>Jair Ramírez</h1>
+            <div class="redes">
+                <a href="https://github.com/jairrami06" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jair-ramirez-869a85221/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="contenedor-btn">
+                <button class="btn" onclick="downloadPDF()">Descargar CV</button>
+            </div>
+        </div>
+        <div class="seccion-derecha">
+            <div class="tarjeta-descripcion">
+                <h2>Sobre mí</h2>
+                <p>Apasionado por la programación y la tecnología. Mi objetivo es crear soluciones tecnológicas innovadoras que mejoren la vida de las personas y faciliten sus tareas diarias. Soy un entusiasta del aprendizaje continuo y siempre estoy buscando nuevos desafíos que me permitan crecer profesional y personalmente.</p>
+            </div>
+        </div>
+        <div class="iconos">      
+            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML Icon" class="icono icono-html">
+            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS Icon" class="icono icono-css">
+            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript Icon" class="icono icono-js">
         </div>
     </section>
-    <section id="habilidades">
-        <h2 class="subtitulo">Habilidades</h2>
-        <ul>
-            <li>Lenguajes de programación: Python, JavaScript, Java</li>
-            <li>Bases de datos: MySQL, PostgreSQL</li>
-            <li>Herramientas de desarrollo: Visual Studio Code, Git</li>
-            <li>Otros: Inglés, Portugués</li>
-        </ul>
-    </section>
-    <section id="Sobre mi">
-        <h2 class="subtitulo">Sobre mí</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/PPMb_rrej5c?si=lhP1CbMVgUQlJnC8"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-    <section id="contacto">
-        <h2 class="subtitulo">Contacto</h2>
-        <form id="contacto">
-            <label for="nombres">Nombres</label> <input type="text" placeholder="Sus nombres" id="nombres"
-                name="nombres" required="required" /> </br>
-            <label for="email">Nombres</label> <input type="email" placeholder="Su email" id="email" name="email"
-                required="required" /> </br>
-            <textarea placeholder="Su mensaje" id="mensaje" rows="10" cols="50"></textarea> </br>
-            <button type="submit" name="enviar">Enviar</button>
-        </form>
-    </section>
-    <section id="ubicacion">
-        <h2 class="subtitulo">Visíta Mis Oficinas</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4741.39218650075!2d-79.96692160697702!3d-2.146144702018442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1716230496210!5m2!1ses-419!2sec"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <footer>
-        <p>Copyright © 2023 Jair Ramirez</p>
-    </footer>
-</body>
 
+    <section id="techstack" class="techstack">
+        <div class="contenido-seccion">
+            <h2>Tech Stack</h2>
+            <p>Las tecnologías y herramientas que he aprendido a lo largo de mi carrera en la programación</p>
+
+            <div class="fila">
+      
+                <div class="col">
+                    <div class="contenedor-techstack">
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tecnologia">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="experiencia">
+        <div class="contenido-seccion">
+            <h2>Experiencia</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4>Desarrollador Java Junior</h4>
+                        <span class="empresa">Chemical Pharm (Sucursal)</span>
+                        <span class="fecha">feb. 2023 - ago. 2023</span>
+                        <p>Diseñé e implementé un sistema de manejo y consulta de inventario, clientes, ventas y contabilidad. Utilizando Java y MySQL logré cumplir con los requerimientos propuestos y brindé soporte continuo para cumplir funcionalidades extra y permitir mostrar todas las consultas deseadas.</p>
+                        <div class="conector">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Soporte y Administración</h4>
+                        <span class="empresa">Escuela Superior Politécnica del Litoral</span>
+                        <span class="fecha">sept. 2023 - feb. 2024</span>
+                        <p>Contribuí al mantenimiento y mejora de un sistema de registro de usuarios en Java y MySQL, proporcionando soporte de TI y solucionando problemas de software. Mejoré habilidades de comunicación interpersonal, resolución de problemas y liderazgo, lo que resultó en una mayor eficiencia y satisfacción de los usuarios en el laboratorio.</p>
+                        <div class="conector">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollador Java</h4>
+                        <span class="empresa">PierToPier</span>
+                        <span class="fecha">mar. 2024 - act</span>
+                        <p>Participo en el desarrollo de algoritmos que permitan la mayor eficiencia posible para colocar elementos en contenedores junto a un equipo de desarrolladores. A lo largo de mi paso además de mejorar mis tecnicas de programación he aprendido sobre metodologías ágiles e integración continua.</p>
+                        <div class="conector">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>Proyectos</h2>
+            <div class="galeria-proyectos contenedor-proyectos">
+                <div class="tarjeta-proyecto">
+                    <img src="img/sopaletras.png" alt="Imagen de proyecto">
+                    <div class="contenido-tarjeta-proyecto">
+                        <div class="etiquetas-proyecto">
+                            <span>Assembly x86</span>
+                        </div>
+                        <div class="titulo-proyecto">Sopa de letras</div>
+                        <div class="descripcion-proyecto">Desarrollo de una sopa de letras en assembly, me permitió conocer como se maneja la programación a bajo nivel y a programar utilizando documentación. </div>
+                        <div class="boton-proyecto"><a href="https://github.com/jairrami06/ProyectOrg" target="_blank">Ver Código</a></div>
+                    </div>
+                </div>
+                <div class="tarjeta-proyecto">
+                    <img src="img/emojisapp.png" alt="Imagen de proyecto">
+                    <div class="contenido-tarjeta-proyecto">
+                        <div class="etiquetas-proyecto">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>JavaFX</span>
+                            <span>Estructura de Datos</span>
+                        </div>
+                        <div class="titulo-proyecto">Aplicación de emojis</div>
+                        <div class="descripcion-proyecto">Diseño e implementación de aplicación utilizando estructuras de datos para manejar el listas que permitan el cambio en aspectos de un emoji como ojos, cara, accesorios, sonrisa.</div>
+                        <div class="boton-proyecto"><a href="https://github.com/jairrami06/ProyectoED" target="_blank">Ver Código</a></div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <form class="col">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                
+                    <label for="tema">Tema</label>
+                    <input type="text" id="tema" name="tema" placeholder="Tema" required>
+                
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                
+                    <button class="btn" type="submit">Enviar</button>
+                </form>
+                <div class="col">
+                    <h3>Ubicación</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31838.90483867082!2d-79.90743323358743!3d-2.2414466611289052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6f95f420f605%3A0x6164a216bd4a0a30!2sGuasmo%2C%20090104%20Guayaquil!5e0!3m2!1ses!2sec!4v1717364135721!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                    <h3>¿Cómo llegar?</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i-3DojaY09Q?si=MVOCCt5JVR76FGJy&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Jair Ramirez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="public/script.js"></script>
+</body>
 </html>
